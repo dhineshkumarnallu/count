@@ -1,0 +1,57 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+.grid-container {
+    background-color: rgb(10, 241, 126);
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas:"header header header header header header"
+                        "sidebar sidebar searchbar searchbar searchbar searchbar"
+                        "sidebar sidebar item1 item2 item3 item3 "
+                        "sidebar sidebar item4 item4 item4 item4"
+                        "footer footer footer footer footer footer" ;
+                        gap: 5px;
+}
+.header {
+    grid-area: header;
+    height: 40px;
+    background-color: aquamarine;  padding: 5px;
+    box-sizing: border-box;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: crimson;
+    height: calc(100vh-40px);
+}
+.searchbar {
+    grid-area: searchbar;
+    background-color: darkorange;
+}
+.footer {
+    grid-area: footer;
+    background-color: black;
+    height: 60px;
+    display: block;
+}
+.item1 {
+    grid-area: item1;
+    background-color: lightpink;
+}
+.item2 {
+    grid-area: item2;
+    background-color: deeppink;
+}
+.item3 {
+    grid-area: item3;
+    background-color: mediumseagreen;
+}
+.item4 {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: item4;
+    background-color: royalblue;
+}
